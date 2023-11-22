@@ -3,6 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.taller;
+
+import lombok.Getter;
+import lombok.Setter;
 /**
  *
  * @author 104623010352 John Faber Navia Narvaez
