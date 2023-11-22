@@ -8,7 +8,7 @@ package com.taller;
  * @author 104623010352 John Faber Navia Narvaez
  */
 public class Motocicleta extends Vehiculo {
-    private int cilindrada;
+    @Setter @Getter private int cilindrada;
 
     // Constructores, getters y setters
 
@@ -17,12 +17,5 @@ public class Motocicleta extends Vehiculo {
     public Motocicleta(int cilindrada, String marca, String modelo, String placa, String horaIngreso) {
         super(marca, modelo, placa, horaIngreso);
         this.cilindrada = cilindrada;
-    }
-    
-    public void setCilindrada(int cilindrada){
-        this.cilindrada = cilindrada;
-    }
-    public int getCilindrada(){
-        return this.cilindrada;
     }
 }
