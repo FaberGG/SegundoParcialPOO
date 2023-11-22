@@ -10,9 +10,7 @@ package com.taller;
  */
 public class Automovil extends Vehiculo {
 
-    private int numeroPuertas;
-
-    // Constructores, getters y setters
+    @Setter @Getter int numeroPuertas;
     // Otros métodos específicos para automóviles
     public Automovil(int numeroPuertas, String marca, String modelo, String placa, String horaIngreso) {
         super(marca, modelo, placa, horaIngreso);
@@ -22,14 +20,6 @@ public class Automovil extends Vehiculo {
     public int calcularCostoParqueo() {
         int costobase = 20;
         return costobase + (numeroPuertas * 5);
-    }
-
-    public int getNumeroPuertas() {
-        return numeroPuertas;
-    }
-
-    public void setNumeroPuertas(int numeroPuertas) {
-        this.numeroPuertas = numeroPuertas;
     }
 
 }
